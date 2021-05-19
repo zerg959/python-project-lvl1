@@ -11,6 +11,6 @@ publish:
 	poetry publish --dry-run
 
 package-install:
-	python -m pip install dist/*.whl
+	python3 -m pip install dist/*.whl
 
 

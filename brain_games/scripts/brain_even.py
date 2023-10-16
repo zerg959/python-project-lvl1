@@ -4,7 +4,7 @@ from random import randint
 import prompt
 
 
-def main():
+def odd_or_even():
     print("Welcome to the Brain Games")
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
@@ -16,7 +16,7 @@ def main():
         question = randint(1, 100)
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
-        if (question % 2 == 0):
+        if question % 2 == 0:
             if answer == answer_even:
                 print('Correct!')
                 counter += 1
@@ -35,6 +35,10 @@ def main():
                       f"Correct answer was '{answer_odd}.'")
                 print(f"Let's try again, {name}!")
     print(f'Congratulations, {name}!')
+
+
+def main():
+    odd_or_even()
 
 
 if __name__ == "__main__":

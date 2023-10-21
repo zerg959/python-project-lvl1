@@ -29,6 +29,7 @@ def gcd():
         else:
             print(f'{answer} is wrong answer;(. Correct answer was {correct_answer}.')
             print(f"Let's try again, {name}!")
+            counter = 0
     print(f'Congratulations, {name}!')
 
 

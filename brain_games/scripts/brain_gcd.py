@@ -7,10 +7,8 @@ name = ''
 def gcd():
     counter = 0
     while counter != 3:
-        num_1 = randint(1, 100)
-        num_2 = randint(1, 100)
-        divisors_1 = []
-        divisors_2 = []
+        num_1, num_2 = randint(1, 100), randint(1, 100)
+        divisors_1, divisors_2 = [], []
         great_common_divisor = []
         for i in range(1, num_1+1):
             if num_1 % i == 0:

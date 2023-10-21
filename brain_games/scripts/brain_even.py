@@ -2,16 +2,18 @@
 
 from random import randint
 import prompt
-import start_func
+# import start_func
 
-start_expression = 'Answer "yes" if the number is even, otherwise answer "no".'
+# start_expression = 'Answer "yes" if the number is even, otherwise answer "no".'
+name = ''
 
 
 def odd_or_even():
-    # print("Welcome to the Brain Games")
-    # name = prompt.string("May I have your name? ")
-    # print(f'Hello, {name}!')
-    # print('Answer "yes" if the number is even, otherwise answer "no".')
+    print("Welcome to the Brain Games")
+    global name
+    name = prompt.string("May I have your name? ")
+    print(f'Hello, {name}!')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     counter = 0
     answer_even = 'yes'
     answer_odd = 'no'
@@ -36,12 +38,11 @@ def odd_or_even():
                 counter = 0
                 print(f"'{answer}' is wrong answer;(. "
                       f"Correct answer was '{answer_odd}.'")
-                print(f"Let's try again, {start_func.name}!")
-    print(f'Congratulations, {start_func.name}!')
+                print(f"Let's try again, {name}!")
+    print(f'Congratulations, {name}!')
 
 
 def main():
-    start_func.start(start_expression)
     odd_or_even()
 
 

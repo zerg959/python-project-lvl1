@@ -1,21 +1,9 @@
 #!/usr/bin/env python3
-
 from random import randint
-import prompt
 import start_func
 
 
 start_expression = 'What is the result of the expression?'
-
-# counter = 0
-
-
-# def start():
-#     print("Welcome to the Brain Games")
-#     global name
-#     name = prompt.string("May I have your name? ")
-#     print(f'Hello, {name}!')
-#     print('What is the result of the expression?')
 
 
 def question_func():
@@ -37,12 +25,9 @@ def answer_func():
         if answer == correct_answer:
             print('Correct')
             counter += 1
-            # print(f'Question: {question}')
         else:
             print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.")
             print(f"Let's try again, {start_func.name}!")
-            # print(f'Question: {question}')
-            # answer = int(input('Your_answer:'))
     print(f'Congratulations, {start_func.name}!')
 
 

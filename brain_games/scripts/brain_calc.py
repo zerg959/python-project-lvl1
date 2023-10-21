@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 import prompt
+from random import randint
 
 name = ''
 # import sys
 #
 # sys.path.append('path')
 # import start_func as ss
-
-from random import randint
-#
 # # # import start_func as ss
 # # from .start_func import *
 #
 # start_expression = 'What is the result of the expression?'
+
 
 def question_func():
     a = randint(0, 5)
@@ -29,12 +28,13 @@ def answer_func():
         question = question_func()
         correct_answer = str(eval(question))
         print(f'Question: {question}')
-        answer = input('Your_answer: ')
+        answer = input('Your answer: ')
         if answer == correct_answer:
             print('Correct')
             counter += 1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.")
+            print(f"{answer} is wrong answer ;(. "
+                  f"Correct answer was {correct_answer}.")
             print(f"Let's try again, {name}!")
     print(f'Congratulations, {name}!')
 

@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
 from random import randint
+
 import prompt
+
 # import start_func
 
-# start_expression = 'Answer "yes" if the number is even, otherwise answer "no".'
+# start_expression = 'Answer "yes" if the number
+# is even, otherwise answer "no".'
 name = ''
 
 
@@ -29,7 +32,7 @@ def odd_or_even():
                 counter = 0
                 print(f"'{answer}' is wrong answer;(. "
                       f"Correct answer was '{answer_even}.'")
-                print(f"Let's try again, {start_func.name}!")
+                print(f"Let's try again, {name}!")
         if question % 2 == 1:
             if answer == answer_odd:
                 print('Correct!')

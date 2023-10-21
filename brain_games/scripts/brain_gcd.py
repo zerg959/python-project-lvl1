@@ -22,7 +22,7 @@ def gcd():
                 great_common_divisor.append(elem)
         correct_answer = max(great_common_divisor)
         print('Question:', num_1, num_2)
-        answer = input('Yours answer:')
+        answer = input('Yours answer: ')
         if answer == str(correct_answer):
             print('Correct!')
             counter += 1

@@ -32,7 +32,8 @@ def progression_func():
             counter += 1
         else:
             print(f"Your answer: '{answer}' is wrong answer;(. "
-                  f"Correct answer was '{correct_answer}'. Let's try again, {name}!")
+                  f"Correct answer was '{correct_answer}'. "
+                  f"Let's try again, {name}!")
             counter = 0
     print(f'Congratulations, {name}!')
 
@@ -49,5 +50,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-

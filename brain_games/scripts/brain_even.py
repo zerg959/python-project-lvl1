@@ -16,7 +16,7 @@ def odd_or_even():
     global name
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
     counter = 0
     answer_even = 'yes'
     answer_odd = 'no'

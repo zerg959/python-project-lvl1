@@ -6,7 +6,7 @@ import prompt
 
 name = ''
 
-
+# hello
 def odd_or_even():
     print("Welcome to the Brain Games!")
     global name
@@ -43,7 +43,6 @@ def odd_or_even():
 
 def main():
     odd_or_even()
-
 
 if __name__ == "__main__":
     main()
